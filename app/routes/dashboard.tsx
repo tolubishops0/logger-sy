@@ -140,6 +140,13 @@ function UserList({
                 newMode === "slow" ? getUsersSlow :
                     getUsers;
 
+        if (newMode === "slow") {
+            logger.warn("UserList — slow fetch detected, this may take a while", {
+                mode: newMode,
+                expectedDelay: "6s",
+            });
+        }
+
         fetcher().then((data: any) => {
             if (!data.users || !Array.isArray(data.users)) {
                 logger.error("UserList — response has wrong shape", {
