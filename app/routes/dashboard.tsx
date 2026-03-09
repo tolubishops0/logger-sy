@@ -475,7 +475,7 @@ export default function Dashboard() {
                 </div>
 
                 {/* Right — user detail */}
-                {/* <div className="flex-1 bg-zinc-950 overflow-hidden flex flex-col">
+                <div className="flex-1 bg-zinc-950 overflow-hidden flex flex-col">
                     <div className="px-4 py-3 border-b border-zinc-800">
                         <p className="text-zinc-500 text-xs tracking-widest">USER DETAILS</p>
                     </div>
@@ -484,7 +484,7 @@ export default function Dashboard() {
                             <UserDetail key={selectedId} userId={selectedId} />
                         </ErrorBoundary>
                     </div>
-                </div> */}
+                </div>
 
             </div>
 
